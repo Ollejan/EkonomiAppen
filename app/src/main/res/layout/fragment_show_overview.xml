@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.mah.ad0025.inluppg1.ShowOverviewFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvOverviewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:background="?android:attr/colorBackground">
+                <TextView
+                    android:text="@string/tvTotalIncome"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="40dp"/>
+                <TextView
+                    android:id="@+id/tvOverviewIncome"
+                    android:textSize="16sp"
+                    android:gravity="end"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+                <TextView
+                    android:text="@string/tvTotalExpenses"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/tvOverviewExpenses"
+                    android:textSize="16sp"
+                    android:gravity="end"/>
+            </TableRow>
+
+            <TableRow
+                android:background="?android:attr/colorBackground"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:text="@string/tvTotal"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/tvOverviewTotal"
+                    android:textSize="16sp"
+                    android:gravity="end"/>
+            </TableRow>
+
+        </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageViewPieChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/contentDescriptionPieChart"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvOverViewGreen"
+            android:textColor="#00FF00"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvOverviewRed"
+            android:textColor="#FF0000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

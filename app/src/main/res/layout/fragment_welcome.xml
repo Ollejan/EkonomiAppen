@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="se.mah.ad0025.inluppg1.WelcomeFragment">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tvWelcome"/>
+
+    <TextView
+        android:id="@+id/tvLoginInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="@string/tvLoginInfo"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:id="@+id/rbLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbLogin"
+            android:layout_marginRight="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbCreate"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
+
+</LinearLayout>
